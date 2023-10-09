@@ -106,7 +106,8 @@ body {
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	cursor: pointer;
+	color: #000;
 }
 .item-column {
 	position: relative;
