@@ -158,7 +158,7 @@
       // Trouve l'index de l'image active dans la collection
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i ;
+          index = i;
         }
       });
       // Calcule l'index de l'image précédente
