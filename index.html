@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Nina Carducci, photographe professionnel</title>
-	<meta name="description" content="Photographe professionnel: Nina Carducci, Préstations: Shooting photo, déplacement: Île-de-France, prix: 350€ la demi-journée, Préstations: Retouches photos professionnel, prix: 50€ la photo, Préstations: Album photos de 30 pages A4, prix: 400€">
+	<meta name="description"
+		content="Photographe professionnel, Shooting photo en Île-de-France à partir de 350€, Retouches photos professionnelles à 50€ la photo, Album photos de 30 pages à 400€.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" defer>
+	<!-- Balises OpenGraph pour Facebook -->
+	<meta property="og:title" content="Nina Carducci, photographe professionnel">
+	<meta property="og:type" content="website">
+	<meta property="og:description"
+		content=" Immortalisez vos plus beaux moments avec un photographe professionnel et créez des souvenirs inoubliables. Préstations: Shooting photo, Retouches photos, Album photos, déplacement: Île-de-France.">
+	<meta property="author" content="Nina Carducci">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:image" content="https://github.com/POQUELANDON/P5_Debuggez_et_optimisez_un_site_de_photographe/blob/master/assets/images/nina.jpg">
+	<!-- Balises Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci, photographe professionnel">
+	<meta name="twitter:description"
+		content="Photographe professionnel: Nina Carducci, Préstations: Shooting photo, déplacement: Île-de-France, prix: 350€ la demi-journée, Préstations: Retouches photos professionnel, prix: 50€ la photo, Préstations: Album photos de 30 pages A4, prix: 400€">
+	<meta name="twitter:image" content="https://github.com/POQUELANDON/P5_Debuggez_et_optimisez_un_site_de_photographe/blob/master/assets/images/nina.jpg">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+		defer>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-	crossorigin="anonymous" defer></script>
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+		defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
+	<!-- Informations pour le référencement local -->
+	<script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "LocalBusiness",
+		  "priceRange": "€€€",
+		  "image": [
+			"https://github.com/POQUELANDON/P5_Debuggez_et_optimisez_un_site_de_photographe/blob/master/assets/images/nina.jpg"
+			],
+          "name": "Nina Carducci, photographe professionnel",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "68 avenue Alsace-Lorraine",
+            "postalCode":"33200",
+            "addressLocality": "Bordeaux"
+          },
+          "telephone": "05 56 67 78 89",
+          "openingHours": "Mo-Fr 10:00-19:00"
+        }
+      </script>
 </head>
+
 <body>
-	<header class="top-header">
+	<header class="top-header" role="banner">
 		<h1 class="name">Nina Carducci</h1>
-		<nav class="nav">
+		<nav class="nav" role="navigation" aria-label="Menu principal">
 			<ul>
-				<li><a href="#about">À propos</a></li>
+				<li><a href="#about" aria-current="page">À propos</a></li>
 				<li><a href="#gallery">Galerie</a></li>
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
@@ -34,10 +72,10 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<main role="main">
 		<article id="header">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-indicators">
+				<div class="carousel-indicators" role="listbox">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
 						class="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -45,36 +83,31 @@
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
 						aria-label="Slide 3"></button>
 				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata-unsplash.jpg" class="d-block w-100" alt="photographie de ryoji iwata"
-							srcset="./assets/images/slider/ryoji-iwata-unsplash-300x139.jpg 300w,
-						             ./assets/images/slider/ryoji-iwata-unsplash-1140x527.jpg 1140w,
-						             ./assets/images/slider/ryoji-iwata-unsplash-1580x731.jpg 1580w"
-									 sizes="
-										(max-width: 650px) 300px,
-									 	(max-width: 1000px) 1140px,
-										1580px">
+				<div class="carousel-inner" role="list">
+					<div class="carousel-item active" role="listitem">
+						<img src="./assets/images/slider/ryoji-iwata-unsplash.jpg" class="d-block w-100"
+							alt="photographie de ryoji iwata" srcset="./assets/images/slider/ryoji-iwata-unsplash-300x139.jpg 300w,
+                            ./assets/images/slider/ryoji-iwata-unsplash-1140x527.jpg 1140w,
+                            ./assets/images/slider/ryoji-iwata-unsplash-1580x731.jpg 1580w" sizes="
+                            (max-width: 650px) 300px,
+                            (max-width: 1000px) 1140px,
+                            1580px">
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item" role="listitem">
 						<img src="./assets/images/slider/nicholas-green-unsplash.jpg" class="d-block w-100"
-							alt="photographie de nicholas green"
-							srcset="./assets/images/slider/nicholas-green-unsplash-300x139.jpg 300w,
-									./assets/images/slider/nicholas-green-unsplash-1140x527.jpg 1140w,
-									./assets/images/slider/nicholas-green-unsplash-1580x731.jpg 1580w"
-							sizes="(max-width: 650px) 300px,
-									(max-width: 1000px) 1140px,
-									1580px">
+							alt="photographie de nicholas green" srcset="./assets/images/slider/nicholas-green-unsplash-300x139.jpg 300w,
+                            ./assets/images/slider/nicholas-green-unsplash-1140x527.jpg 1140w,
+                            ./assets/images/slider/nicholas-green-unsplash-1580x731.jpg 1580w" sizes="(max-width: 650px) 300px,
+                            (max-width: 1000px) 1140px,
+                            1580px">
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item" role="listitem">
 						<img src="./assets/images/slider/edward-cisneros-unsplash.jpg" class="d-block w-100"
-							alt="photographie de edward cisneros"
-							srcset="./assets/images/slider/edward-cisneros-unsplash-300x139.jpg 300w,
-									./assets/images/slider/edward-cisneros-unsplash-1140x527.jpg 1140w,
-									./assets/images/slider/edward-cisneros-unsplash-1580x731.jpg 1580w"
-							sizes="(max-width: 650px) 300px,
-									(max-width: 1000px) 1140px,
-									1580px">
+							alt="photographie de edward cisneros" srcset="./assets/images/slider/edward-cisneros-unsplash-300x139.jpg 300w,
+                            ./assets/images/slider/edward-cisneros-unsplash-1140x527.jpg 1140w,
+                            ./assets/images/slider/edward-cisneros-unsplash-1580x731.jpg 1580w" sizes="(max-width: 650px) 300px,
+                            (max-width: 1000px) 1140px,
+                            1580px">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -89,22 +122,20 @@
 				</button>
 			</div>
 		</article>
-		<article id="about">
+		<article id="about" role="article">
 			<div class="picture left">
-				<img src="./assets/images/nina.jpg" alt="portrait de Nina Carducci" 
-					srcset="./assets/images/nina-256x255.jpg 256w,
-							./assets/images/nina-560x558.jpg 560w,
-							./assets/images/nina-730x728.jpg 730w,
-							./assets/images/nina-1120x1117.jpg 1120w" 
-					sizes="(max-width: 539px) 100vw,
-				            (max-width: 979px) 50vw,
-				            (max-width: 1020px) 33.3vw,
-				            (max-width: 1420px) 25vw,
-				            20vw">
+				<img src="./assets/images/nina.jpg" alt="portrait de Nina Carducci" srcset="./assets/images/nina-256x255.jpg 256w,
+                            ./assets/images/nina-560x558.jpg 560w,
+                            ./assets/images/nina-730x728.jpg 730w,
+                            ./assets/images/nina-1120x1117.jpg 1120w" sizes="(max-width: 539px) 100vw,
+                            (max-width: 979px) 50vw,
+                            (max-width: 1020px) 33.3vw,
+                            (max-width: 1420px) 25vw,
+                            20vw">
 			</div>
-			<section id="about-me">
+			<section id="about-me" role="region" aria-label="À propos de moi">
 				<h2 class="about-me-title">A propos de moi</h2>
-				<article class="about-me-introduction">
+				<article class="about-me-introduction" role="article">
 					Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment,
 					une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait
 					vibrer.
@@ -119,67 +150,61 @@
 				</p>
 			</section>
 		</article>
-		<article id="gallery">
+		<article id="gallery" role="article">
 			<h3 class="title">Portfolio</h3>
 			<section class="container-py-3">
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/concerts-aaron-paul-unsplash.jpg"
 						alt="photo concerts aaron paul"
-						srcset="./assets/images/gallery/concerts/concerts-aaron-paul-unsplash-500x500.jpg 500w"
-							sizes="(max-width: 1000px) 500px,
-									500px">
+						srcset="./assets/images/gallery/concerts/concerts-aaron-paul-unsplash-500x500.jpg 500w" sizes="(max-width: 1000px) 500px,
+                                    500px">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/entreprise-ali-morshedlou-unsplash.jpg"
 						alt="photo entreprise ali morshedlou"
 						srcset="./assets/images/gallery/entreprise/entreprise-ali-morshedlou-unsplash-500x500.jpg 500w"
-							sizes="(max-width: 1000px) 500px,
-									500px">
+						sizes="(max-width: 1000px) 500px,
+                                    500px">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/entreprise-jason-goodman-unsplash.jpg"
 						alt="photo entreprise jason goodman"
 						srcset="./assets/images/gallery/entreprise/entreprise-jason-goodman-unsplash-500x500.jpg 500w"
-							sizes="(max-width: 1000px) 500px,
-									500px">
+						sizes="(max-width: 1000px) 500px,
+                                    500px">
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/mariage-hannah-busing-unsplash.jpg"
 						alt="photo mariage hannah busing"
-						srcset="./assets/images/gallery/mariage/mariage-hannah-busing-unsplash-500x500.jpg 500w"
-							sizes="(max-width: 1000px) 500px,
-									500px">
+						srcset="./assets/images/gallery/mariage/mariage-hannah-busing-unsplash-500x500.jpg 500w" sizes="(max-width: 1000px) 500px,
+                                    500px">
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/portrait-ade-tunji-unsplash.jpg"
-						alt="portrait ade tunji"
-						srcset="./assets/images/gallery/portraits/portrait-ade-tunji-unsplash-500x500.jpg 500w"
-							sizes="(max-width: 1000px) 500px,
-									500px">
+						src="./assets/images/gallery/portraits/portrait-ade-tunji-unsplash.jpg" alt="portrait ade tunji"
+						srcset="./assets/images/gallery/portraits/portrait-ade-tunji-unsplash-500x500.jpg 500w" sizes="(max-width: 1000px) 500px,
+                                    500px">
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/mariage-jakob-owens-unsplash.jpg"
 						alt="photo mariage jakob owens"
-						srcset="./assets/images/gallery/mariage/mariage-jakob-owens-unsplash-500x500.jpg 500w"
-							sizes="(max-width: 1000px) 500px,
-									500px">
+						srcset="./assets/images/gallery/mariage/mariage-jakob-owens-unsplash-500x500.jpg 500w" sizes="(max-width: 1000px) 500px,
+                                    500px">
 					<img data-gallery-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/portrait-nino-van-prattenburg-unsplash.jpg"
 						alt="portrait nino van prattenburg"
 						srcset="./assets/images/gallery/portraits/portrait-nino-van-prattenburg-unsplash-500x500.jpg 500w"
-							sizes="(max-width: 1000px) 500px,
-									500px">
+						sizes="(max-width: 1000px) 500px,
+                                    500px">
 					<img data-gallery-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/concerts-austin-neill-unsplash.jpg"
 						alt="photo concerts austin neill"
-						srcset="./assets/images/gallery/concerts/concerts-austin-neill-unsplash-500x500.jpg 500w"
-							sizes="(max-width: 1000px) 500px,
-									500px">
+						srcset="./assets/images/gallery/concerts/concerts-austin-neill-unsplash-500x500.jpg 500w" sizes="(max-width: 1000px) 500px,
+                                    500px">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/entreprise-mateus-campos-felipe-unsplash.jpg"
 						alt="photo entreprise mateus campos felipe"
 						srcset="./assets/images/gallery/entreprise/entreprise-mateus-campos-felipe-unsplash-500x500.jpg 500w"
-							sizes="(max-width: 1000px) 500px,
-									500px">
+						sizes="(max-width: 1000px) 500px,
+                                    500px">
 				</div>
 			</section>
-			<div class="quote">
+			<div class="quote" role="blockquote">
 				<figure>
 					<blockquote>
 						<h4 class="quote__text">
@@ -192,10 +217,10 @@
 				</figure>
 			</div>
 		</article>
-		<section id="services">
+		<section id="services" role="region" aria-label="Mes services">
 			<h3 class="title">Mes services</h3>
 			<div class="container">
-				<div class="service">
+				<div class="service" role="article">
 					<div class="service__description">
 						<h3>Shooting photo</h3>
 						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace
@@ -205,9 +230,8 @@
 						<h4>350€/demi journée</h4>
 						<span>Matériel, déplacement inclus</span>
 					</div>
-
 				</div>
-				<div class="service">
+				<div class="service" role="article">
 					<div class="service__description">
 						<h3>Retouches</h3>
 						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
@@ -218,7 +242,7 @@
 						<span>2 AR par photo</span>
 					</div>
 				</div>
-				<div class="service">
+				<div class="service" role="article">
 					<div class="service__description">
 						<h3>Album photos</h3>
 						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers
@@ -231,7 +255,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="quote">
+		<section class="quote" role="blockquote">
 			<figure>
 				<blockquote>
 					<h4 class="quote__text">
@@ -242,33 +266,31 @@
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		</section>
-		<section id="contact">
-			<div class="container">
-				<div class="form-container">
-					<h3>Une question ? Une demande de devis ?</h3>
-					<p>
-						N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
-					</p>
-					<form action="" method="post">
-						<label for="nom">Nom</label>
-						<input type="text" name="nom" id="nom" aria-labelledby="nom">
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" aria-labelledby="email" autocomplete="off">
-						<label for="message">Message</label>
-						<textarea name="message" id="message" cols="30" rows="10"></textarea>
-						<input type="submit" value="Envoyer">
-					</form>
-				</div>
-				<div class="picture right">
-				<img src="./assets/images/camera.jpg" alt="appareil photo" 
-					srcset="./assets/images/camera-419x418.jpg 419w,
-							./assets/images/camera-838x836.jpg 838w" 
-					sizes="(max-width: 3000px) 100vw,
-							(max-width: 1280px) 339px,
-							(max-width: 300px) 100vw">
-				</div>
-			</div>
-		</section>
 	</main>
+	<footer id="contact" role="contentinfo">
+		<div class="container">
+			<div class="form-container">
+				<h3>Une question ? Une demande de devis ?</h3>
+				<p>
+					N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
+				</p>
+				<form action="" method="post">
+					<label for="nom">Nom</label>
+					<input type="text" name="nom" id="nom" aria-labelledby="nom">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" aria-labelledby="email" autocomplete="off">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					<input type="submit" value="Envoyer">
+				</form>
+			</div>
+			<div class="picture right">
+				<img src="./assets/images/camera.jpg" alt="appareil photo" srcset="./assets/images/camera-419x418.jpg 419w,
+						./assets/images/camera-838x836.jpg 838w" sizes="(max-width: 3000px) 100vw,
+						(max-width: 1280px) 339px,
+						(max-width: 300px) 100vw">
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
