@@ -71,7 +71,7 @@ body {
 
 .picture img {
 	width: 100%;
-	height: auto;
+	height: auto
 }
 
 #about-me {
@@ -105,9 +105,10 @@ body {
 	justify-content: center
 }
 
+.nav-pills .nav-link.active.active-tag ,
 .nav-pills .nav-link.active-tag,
 .nav-pills .show>.nav-link {
-	color: #000000;
+	color: #000;
 	background-color: #BEB45A;
 	border-radius: 0
 }
