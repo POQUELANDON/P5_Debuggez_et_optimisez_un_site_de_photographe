@@ -6,10 +6,10 @@
 	<meta name="description" content="Photographe professionnel portraits & événementiel à Bordeaux, Shooting photo à partir de 350€, Retouches photos professionnelles à 50€ la photo, Album photos de 30 pages à 400€.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
@@ -18,7 +18,7 @@
 	<!-- Balises OpenGraph pour Facebook -->
 	<meta property="og:site_name" content="Nina Carducci, photographe professionnel portraits & événementiel à Bordeaux">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://htmlpreview.github.io/?https://github.com/POQUELANDON/P5_Debuggez_et_optimisez_un_site_de_photographe/blob/master/index.html">
+	<meta property="og:url" content="https://nina-carducci.github.io/">
 	<meta property="og:title"
 		content="Nina Carducci, photographe professionnel portraits & événementiel à Bordeaux - Plein d'articles géniaux">
 	<meta property="og:description"
@@ -33,13 +33,13 @@
 	<meta name="twitter:description"
 	content="Immortalisez vos plus beaux moments avec un photographe professionnel et créez des souvenirs inoubliables. Shooting, Retouches et Album photos, déplacement possible en Île-de-France possible.">
 	<meta name="twitter:image" content="./assets/images/nina-560x558.jpg">
-	<meta name="twitter:url" content="https://htmlpreview.github.io/?https://github.com/POQUELANDON/P5_Debuggez_et_optimisez_un_site_de_photographe/blob/master/index.html">
+	<meta name="twitter:url" content="https://nina-carducci.github.io/">
 	<!-- Informations pour le référencement local microdonnées Schema.org-->
 	<script type="application/ld+json">
         {
           "@context": "http://schema.org",
           "@type": "LocalBusiness",
-		  "priceRange": "50€400€",
+		  "priceRange": "50€ à 400€",
 		  "image": [
 			"./assets/images/nina-560x558.jpg"
 			],
@@ -276,31 +276,58 @@
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		</section>
+		<!-- Formulaire de contact -->
+		<section id="contact">
+			<div class="container">
+				<div class="form-container">
+					<h3>Une question ? Une demande de devis ?</h3>
+					<p>
+						N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
+					</p>
+					<form action="" method="post">
+						<label for="nom">Nom</label>
+						<input type="text" name="nom" id="nom" aria-labelledby="nom">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" aria-labelledby="email" autocomplete="off">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+						<input type="submit" value="Envoyer">
+					</form>
+				</div>
+				<div class="picture right">
+					<img src="./assets/images/camera.jpg" alt="appareil photo" srcset="./assets/images/camera-419x418.jpg 419w,
+							./assets/images/camera-838x836.jpg 838w" sizes="(max-width: 3000px) 100vw,
+							(max-width: 1280px) 339px,
+							(max-width: 300px) 100vw">
+				</div>
+			</div>
+		</section>
 	</main>
-	<!-- Formulaire de contact -->
-	<footer id="contact">
+	<!-- Footer de référencement local et informations légales -->
+	<footer class="footer">
+		<div class="company-info">
+			<div itemscope itemtype="http://schema.org/Person">
+				<ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<li><h1 itemprop="name">Nina Carducci</h1></li>
+					<li><h2 itemprop="jobTitle">Photographe professionnel portraits & événementiel</h2></li>
+					<li><span itemprop="streetAddress">68 avenue Alsace-Lorraine</span></li>
+					<li><span itemprop="addressLocality">Bordeaux</span></li>
+					<li><span itemprop="addressRegion"> Bordeaux</span></li>
+					<li><span itemprop="postalCode">33200</span></li>
+				</ul>
+				<div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+					<meta itemprop="contactType" content="customer service">
+					<meta itemprop="telephone" content="+33 5 56 67 78 89">
+					<meta itemprop="hoursAvailable" content="Mo,Tu,We,Th,Fr 10:00-19:00">
+				</div>
+			</div>
+		</div>
 		<div class="container">
-			<div class="form-container">
-				<h3>Une question ? Une demande de devis ?</h3>
-				<p>
-					N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
-				</p>
-				<form action="" method="post">
-					<label for="nom">Nom</label>
-					<input type="text" name="nom" id="nom" aria-labelledby="nom">
-					<label for="email">Email</label>
-					<input type="email" name="email" id="email" aria-labelledby="email" autocomplete="off">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" cols="30" rows="10"></textarea>
-					<input type="submit" value="Envoyer">
-				</form>
-			</div>
-			<div class="picture right">
-				<img src="./assets/images/camera.jpg" alt="appareil photo" srcset="./assets/images/camera-419x418.jpg 419w,
-						./assets/images/camera-838x836.jpg 838w" sizes="(max-width: 3000px) 100vw,
-						(max-width: 1280px) 339px,
-						(max-width: 300px) 100vw">
-			</div>
+			<ul class="legal-links">
+				<li><a href="mentions-legales.html">Mentions Légales</a></li>
+				<li><a href="conditions-generales.html">Conditions Générales de Vente</a></li>
+				<li><a href="declaration-cnil.html">Déclaration CNIL</a></li>
+			</ul>
 		</div>
 	</footer>
 </body>

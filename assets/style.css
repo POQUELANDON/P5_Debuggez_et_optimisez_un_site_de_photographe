@@ -261,6 +261,32 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+.footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.company-info h1, .company-info h2, .company-info ul li {
+	display: flex;
+	font-size: 14px;
+	margin-bottom: 0;
+	justify-content: flex-start;
+}
+
+.legal-links li {
+	list-style-type: none;
+	display: flex;
+	font-size: 14px;
+	margin-bottom: 0;
+	justify-content: flex-end;	
+}
+
+.legal-links a {
+	text-decoration: none;
+	color: #000;	
+}
+
 @media all and (max-width:1180px) {
 	.picture {
 		flex: 2
@@ -271,7 +297,7 @@ input[type="submit"] {
 		align-items: center
 	}
 
-	.about-me__title {
+	.about-me-title {
 		margin-top: 0;
 		margin-bottom: 1em
 	}
@@ -301,7 +327,7 @@ input[type="submit"] {
 		z-index: -1
 	}
 
-	.about-me__title {
+	.about-me-title {
 		text-align: center;
 		margin-top: 1em
 	}
